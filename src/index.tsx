@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux";
-import {store} from "./n1_main/m2-bll/store";
-import AppSerge from "./n1_main/m1-ui/app/AppSerge";
+import {store} from "./Redux/Store/store";
+import App from "./app";
 import {ThemeProvider} from "@material-ui/core";
 import {createTheme} from "@mui/material";
 import {HashRouter} from "react-router-dom";
@@ -24,7 +24,7 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
         <Provider store={store}>
             <HashRouter>
-                <AppSerge/>
+                <App/>
             </HashRouter>
         </Provider>
     </ThemeProvider>,
